@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+}
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.342);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background: white;
+    font-family: 'Roboto', sans-serif;
+}
+header .inner-header{
+    width:80%;
+    /* padding: 10px 0px; */
+    margin:0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .inner-header .logo img{
+    width:190px;
+}
+header .inner-header ul.menu{
+    display: flex;
+    align-items: center;
+}
+header .inner-header ul.menu li{
+    list-style: none;
+}
+header .inner-header ul.menu li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 40px 20px;
+    color: #2a88bb;
+    transition: 0.3s;
+}
+header .inner-header ul.menu li.active a{
+    background-color: black;
+    color: #fff;
+}
+header .inner-header ul.menu li a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #000;
+}
+header .inner-header ul.menu li:last-child a {
+    padding: 9px 26px;
+    background: black;
+    color: #fff;
+    border-radius: 35px;
+}
+header .inner-header ul.menu li:last-child a:hover{
+    background-color: green;
+}
+/*=======================================================================================
+Banner Section CSS
+=======================================================================================*/
+.banner{
+    font-family: 'Roboto', sans-serif;
+    background: url(../img/back.jpg);
+    position: relative;
+    background-size: cover;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    opacity: 0.4;
+    background-color: black;
+}
+.inner-banner{
+    padding:180px 0px;
+    width:50%;
+    margin-left:10%;
+    position: relative;
+}
+.inner-banner h1{
+    color: #fff;
+    font-size: 60px;
+}
+.inner-banner p{
+    font-weight: 100;
+    color: #fff;
+    font-size: 30px;
+    padding-top: 20px;
+}
+/*=======================================================================================
+How Work Section CSS
+=======================================================================================*/
+section.how-work{
+    font-family: 'Roboto', sans-serif;
+    padding:120px 0px;
+}
+section.how-work .how-work-title{
+    text-align: center;
+}
+section.how-work .how-work-title h3{
+    font-size: 32px;
+    padding-bottom:20px;
+}
+section.how-work .how-work-title p{
+    font-size: 16px;
+}
+section.how-work .how-work-box-wrp{
+    width: 80%;
+    margin:0px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+section.how-work .how-work-box-wrp .how-work-boxes{
+    width:25%;
+    text-align: center;
+}
+
+section.how-work .how-work-box-wrp .how-work-boxes h3{
+    padding: 15px 0px;
+    font-size: 28px;
+}
+section.how-work .how-work-box-wrp .how-work-boxes p{
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+}
+section.how-work .how-work-box-wrp .how-work-boxes .how-work-boxes-inner{
+    padding: 0px 15px;
+}
+/*=======================================================================================
+Video Cover Section CSS
+=======================================================================================*/
+section.add-video-cover{
+    background: whitesmoke;
+    padding: 120px 0px;
+}
+section.add-video-cover .add-video-cover-inner{
+    width: 80%;
+    margin:0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.add-video-cover .add-video-cover-inner .add-video-cover-inner-img-wrp{
+    width: 40%;
+}
+section.add-video-cover .add-video-cover-inner .add-video-cover-inner-img-wrp img{
+    width: 100%;
+}
+section.add-video-cover .add-video-cover-inner .add-video-cover-innner-content-wrp{
+    width:55%;
+    padding-left: 5%;
+}
+section.add-video-cover .add-video-cover-inner .add-video-cover-innner-content-wrp h3{
+    font-size: 32px;
+}
+section.add-video-cover .add-video-cover-inner .add-video-cover-innner-content-wrp p{
+    padding-top:20px;
+    font-weight: 300;
+}

@@ -1,0 +1,64 @@
+*
+{padding: 0px;
+margin: 0px;}
+header{background-color: cyan;
+padding: 30px;}
+
+.logo{ width:120px;
+height:120px;
+background-color: red;
+border-radius: 70px;}
+
+ul.menu li{background-color: darkmagenta;
+width:120px;
+height:30px;
+list-style: none;
+margin: 0px 10px;
+}
+ul.menu{display: flex;}
+.inheader{display: flex;
+justify-content: space-between;
+align-items:center;
+width:80%;
+margin:0px auto;}
+
+.banner{background-color: chartreuse;
+padding: 120px;}
+
+.about{display: flex;
+justify-content: space-evenly;
+padding: 80px 0px;}
+
+.about-box{width:22%;
+background-color: green;
+padding:40px 10px;}
+.about-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: blue;
+    margin: 0px auto;
+}
+
+.about-rectangle{
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    background-color: blue;
+    margin:30px 0px ;
+}
+.redpart{padding: 100px;
+background-color: red;}
+
+footer{background-color: palevioletred;
+padding: 80px;
+margin-top: 49px
+;}
+
+.footer-inner{display: flex;}
+
+
+.footerbox{width: 25%;
+height: 180px;
+background-color:chartreuse ;
+margin: 0px 10px;}

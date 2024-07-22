@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math is Fun- Javascript</title>
+    <style>
+        .marks{
+            margin: 10px 0px;
+        }
+        body{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Lets Calculate Marks</h1>
+    <input class="marks" type="number" id="mt" placeholder="maths"><br>
+    <input class="marks" type="number" id="hi" placeholder="Hindi"><br>
+    <input class="marks" type="number" id="eng" placeholder="english"><br>
+    <input class="marks" type="number" id="ssc" placeholder="social science"><br>
+    <input class="marks" type="number" id="science" placeholder="science"><br>
+    <button onclick="print()">Print Marks</button>
+
+    <h1>your Total Marks <span id="total marks">  - </span></h1>
+    <h1>your Total Marks percentage <span id="perc"> -  %</span></h1>
+    <h1>your Grade <span id="grade">- </span></h1>
+
+</body>
+<script>
+    function print(){
+        let mt= document.getElementById("mt").value;
+        let hi= document.getElementById("hi").value;
+        let eng= document.getElementById("eng").value;
+        let ssc= document.getElementById("ssc").value;
+        let science= document.getElementById("science").value;
+
+        let total= parseFloat(mt)+parseFloat(hi)+parseFloat(eng)+parseFloat(ssc)+parseFloat(science);
+        document.getElementById("total marks").innerHTML= total;
+        alert(total);
+
+        let per= Math.round((total/500)*100);
+        document.getElementById("perc").innerHTML=per;
+
+        if( per<=100 && per>90){
+            document.getElementById("grade").innerHTML= A;
+        }else if( per<=90 && per>75){
+            document.getElementById("grade").innerHTML= B;}
+        else if( per<=75 && per>60){
+            document.getElementById("grade").innerHTML= C;}
+         //else{ document.getElementById("grade").innerHTML= Sorry You Failed;}
+
+       
+        
+
+    }
+</script>
+</html>
